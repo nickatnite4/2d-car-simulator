@@ -14,6 +14,9 @@ class Car:
         self.steering = 0.0
         self.brake_deceleration = 10
         self.rpm = 1000
+        self.current_gear = 1
+        self.differential_gear = 3.42
+        self.wheel_radius = 0.34
 
     def update(self, dt):
         self.velocity += (self.acceleration * dt , 0)
